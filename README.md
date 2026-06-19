@@ -2,59 +2,61 @@
 
 ## Overview
 
-This project predicts the selling price of a car based on its specifications and technical attributes using Machine Learning. The application is deployed using Streamlit and provides real-time price predictions through an interactive web interface.
+Car Price Prediction is a machine learning web application that estimates the market value of a vehicle based on its specifications and attributes. The project demonstrates an end-to-end machine learning workflow, including data preprocessing, feature engineering, model training, evaluation, and deployment through an interactive Streamlit interface.
 
 ## Features
 
-* Machine Learning based car price prediction
-* Interactive Streamlit web application
-* Data preprocessing and feature engineering
-* Model comparison and evaluation
-* End-to-end Scikit-Learn pipeline
-* Real-time price estimation
+* Predicts vehicle prices using Machine Learning
+* Interactive and user-friendly Streamlit web application
+* Data preprocessing and feature engineering pipeline
+* Comparison of multiple regression models
+* Real-time price prediction
+* End-to-end Scikit-Learn pipeline implementation
 
 ## Dataset
 
-The dataset contains information about vehicles including:
+The project uses a vehicle dataset containing information such as:
 
 * Brand
 * Manufacturing Year
-* Body Type
 * Fuel Type
-* Transmission
-* Engine Capacity (CC)
+* Transmission Type
+* Engine Capacity
 * Horsepower
 * Mileage
-* Manufacturing Country
+* Vehicle Category
 
-Additional engineered features:
-
-* Car Age
-* HP-per-CC Ratio
-* Efficiency Score
-
-Dataset file:
+The dataset used for training is available in:
 
 ```text
 dataset/global_cars_enhanced.csv
 ```
+
+## Feature Engineering
+
+Custom features were created to improve model performance and capture meaningful vehicle characteristics:
+
+* Car Age
+* HP-per-CC Ratio
+* Efficiency Score
+* Luxury Vehicle Indicator
 
 ## Machine Learning Workflow
 
 1. Data Cleaning and Preprocessing
 2. Exploratory Data Analysis (EDA)
 3. Feature Engineering
-4. Model Training
-5. Model Evaluation
-6. Model Deployment
+4. Model Training and Evaluation
+5. Model Selection
+6. Deployment using Streamlit
 
-## Models Evaluated
+## Models Explored
 
 * Linear Regression
 * Random Forest Regressor
 * Decision Tree Regressor
 
-Random Forest Regressor was selected as the final model due to its superior predictive performance.
+The final deployed model is integrated into a reusable Scikit-Learn pipeline for real-time predictions.
 
 ## Project Structure
 
@@ -62,8 +64,8 @@ Random Forest Regressor was selected as the final model due to its superior pred
 Car_Price_Prediction/
 │
 ├── app.py
-├── requirements.txt
 ├── car_price_pipeline.pkl
+├── requirements.txt
 ├── README.md
 │
 ├── dataset/
@@ -100,6 +102,6 @@ https://carpriceprediction-5gu5tyet7bhifkkbjyqscp.streamlit.app/
 
 ## Author
 
-Anunay Kumar
+**Anunay Kumar**
 B.Tech Information Technology
 Haldia Institute of Technology
